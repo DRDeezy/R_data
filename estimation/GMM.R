@@ -1,12 +1,3 @@
-#Regression analysis
-#Let's start with one country, i.e. Korea
-#https://medium.com/codex/generalized-method-of-moments-gmm-in-r-part-1-of-3-c65f41b6199
-#"By default, efficient GMM estimator just allows for the heteroskedasticity across samples."
-#"Actually this covariance matrix is just the White (1980) heteroskedasticity robust covariance for OLS estimator"
-# The estimates of the above GMM are the same as those in lm
-# The sd of the above GMM are the white heterosketicity robust cov for linear regression
-#diag(vcovHC(lm_res, type = "HC0"))^0.5
-
 
 #install.packages("")
 
