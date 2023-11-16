@@ -14,9 +14,9 @@ library(gmm)
 library(tibble)
 rm(list = ls())
 
-################################################################################################################
+
 #Firstly, load the data
-################################################################################################################
+
 #Read data
 #reer_aux_1 = [REER_t - REER_(t-8)]/REER_(t-8)
 #reer_aux_2 = [REER_t - REER_(t-1)]/REER_(t-1)
@@ -38,9 +38,9 @@ colnames(reer_aux_1_data)[2:ncol(reer_aux_1_data)] <- colnames(reer_aux_2_data)[
 
 
 
-#########################################################################################################################################################################
+
 #Linear regression GMM model
-#########################################################################################################################################################################
+
 #Desired formula to use (no intercept)
 #Type: Basic
 formula <- inflation ~ 0 + infl_lag + real_gdp + infl_exp +  reer
@@ -57,7 +57,7 @@ formula <- inflation ~ 0 + infl_lag + real_gdp + infl_exp +  reer
 #Type: inflation -> deflator (OLS estimation proved deflator to be useless)
 #formula <- deflator ~ 0 + Lag(deflator, 1) + real_gdp + deflator_exp +  reer
 
-#####################################################################################################################################################################
+
 # Function to run GMM (with HAC) in a set of DATA
 
 #Create table to store results
@@ -237,4 +237,4 @@ runGMM <- function() {
 # Run linear regression GMM model
 runGMM()
 
-#####################################################################################################################################################################
+
