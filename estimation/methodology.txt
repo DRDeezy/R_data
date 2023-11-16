@@ -1,0 +1,9 @@
+reer_aux.xlxs
+	-> reer_aux_1 = [REER_t - REER_(t-8)]/REER_(t-8)
+	-> reer_aux_2 = [REER_t - REER_(t-1)]/REER_(t-1)
+	-> gdp_cum    = cumulative real gdp for t,t-1,t-2,t-4
+
+data.xlsx
+	-> reer      -> HP12 filter, lambda=1600, quarterly frequency
+	-> inflation -> X-13-ARIMA deseasoned -> HP12 filter, lambda=1600, quarterly frequency
+	-> real_gdp  -> X-13-ARIMA deseasoned -> HP12 filter, lambda=1600, quarterly frequency	-> deflator  -> already deseasoned -> inflation constructed -> HP12 filter, lambda=1600, quarterly frequency
