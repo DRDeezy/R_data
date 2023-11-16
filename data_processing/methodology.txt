@@ -1,3 +1,0 @@
-REER -> scale(logs) -> apply HP12 filter
-CPI -> calculate inflation [log(P_t/P_t-1)] -> deseason (X-13ARIMA-SEATS) -> HP12 filter
-Real GDP -> deseason (X-13ARIMA-SEATS) -> HP12 filter
